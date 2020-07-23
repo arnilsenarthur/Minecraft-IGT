@@ -1,0 +1,38 @@
+{
+	"entered_nether":{
+		"type":"advancement",
+		"path":["minecraft:nether/root"]
+	},
+	"found_fortress":{
+		"type":"advancement",
+		"path":["minecraft:nether/find_fortress"]
+	},
+	"got_blaze_rod":{
+		"type":"advancement",
+		"path":["minecraft:nether/obtain_blaze_rod"]
+	},
+	"entered_end":{
+		"type": "advancement",
+		"path":["minecraft:end/root"]
+	},
+	"killed_ender_dragon":{
+		"type": "advancement",
+		"path":["minecraft:end/kill_dragon"]
+	},
+	"villager_trades":{
+		"type":"stat",
+		"path":["minecraft:custom","minecraft:traded_with_villager"]
+	},
+	"deaths":{
+		"type":"stat",
+		"path":["minecraft:custom","minecraft:deaths"]
+	},
+	"killed_endermans":{
+		"type":"stat",
+		"path":["minecraft:killed","minecraft:enderman"]
+	},
+	"play_time":{
+		"type":"stat",
+		"path":["minecraft:custom","minecraft:play_one_minute"]
+	}
+}

@@ -1,0 +1,49 @@
+{
+	"config":{
+		"folder": null
+	},
+	"style":{
+		"main":{
+			"background": "#808080"
+		},
+		"user_info":{
+			"color":"#FFFFFF"
+		},
+		"header":{
+			"title":{
+				"text":"Minecraft:Java Editior Any%",
+				"color":"#FFFFFF"
+			},
+			"subtitle":{
+				"text":"Glitchless",
+				"color":"#FFFFFF"
+			},
+			"background":"#404040",
+			"showhead": true,
+			"three_dimensional_head": false
+		},
+		"timer":{
+			"ingame_color": "#0000FF",
+			"offgame_color": "#FF0000",
+			"complete_color": "#00FF00",
+			"last_ingame_color": "#FFFFFF",
+			"last_ingame_label": "Last In-Game Time",
+			"background":"gradient-horizontal #404040 #606060"
+		},
+		"stats":{
+			"yes":{
+				"text":"Yes",
+				"color":"#00FF00"
+			},
+			"no":{
+				"text":"No",
+				"color":"#FF0000"
+			},
+			"number":{
+				"color":"#888888"
+			},
+			"background":"#FFFFFF",
+			"color": "#000000"
+		},
+	}
+}
