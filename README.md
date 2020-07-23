@@ -9,6 +9,7 @@ Created by Árnilsen Arthur/Infobros2000 with Java using java-json api,
 - [x] Stats/Advancements Customization via JSON
 - [x] Time Estimation between Minecraft Auto Saves
 - [x] Screen Recognition system to detect when you enter nether or the end without need an Auto Save
+- [x] Retrieves your head texture and username automatically and show on screen (Configurable)
 - [ ] Layout Customization GUI
 - [ ] Stats/Advancements Customization GUI
 ## Customization
