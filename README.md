@@ -1,5 +1,5 @@
 # Árnilsen's Minecraft In-Game Timer
-Minecraft InGameTimer with layout customization and screen recognition to automatic update splits. (For now only works 1.12+)
+Minecraft InGameTimer with layout customization,screen recognition and auto-updated splits. (For now only works 1.12+)
 <br>
 Created by Árnilsen Arthur/Infobros2000 with Java using java-json api, 
 ## Timer Image
