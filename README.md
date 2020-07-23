@@ -4,6 +4,8 @@ Minecraft InGameTimer with layout customization and screen recognition to automa
 Created by Árnilsen Arthur/Infobros2000 with Java using java-json api, 
 ## Timer Image
 ![Timer Image](https://github.com/arnilsenarthur/Minecraft-IGT/blob/master/img/1.png)
+## Releases
+https://github.com/arnilsenarthur/Minecraft-IGT/releases
 ## Features
 - [x] Layout Customization via JSON
 - [x] Stats/Advancements Customization via JSON
