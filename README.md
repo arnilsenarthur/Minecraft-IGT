@@ -4,11 +4,14 @@ Minecraft InGameTimer with layout customization and screen recognition to automa
 Created by Árnilsen Arthur/Infobros2000 with Java using java-json api, 
 ## Timer Image
 ![Timer Image](https://github.com/arnilsenarthur/Minecraft-IGT/blob/master/img/1.png)
+## Releases
+https://github.com/arnilsenarthur/Minecraft-IGT/releases
 ## Features
 - [x] Layout Customization via JSON
 - [x] Stats/Advancements Customization via JSON
 - [x] Time Estimation between Minecraft Auto Saves
 - [x] Screen Recognition system to detect when you enter nether or the end without need an Auto Save
+- [x] Retrieves your head texture and username automatically and show on screen (Configurable)
 - [ ] Layout Customization GUI
 - [ ] Stats/Advancements Customization GUI
 ## Customization
