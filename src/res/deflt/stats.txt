@@ -4,8 +4,8 @@
 		"id":"villager_trades",
 		"type": "count",
 		"icon":{
-			"type":"resource",
-			"id":"villager"
+			"type":"skull",
+			"id":"bd482739767c45dca1f8c33c40530952"
 		}
 	},
 	{
@@ -13,8 +13,8 @@
 		"id":"killed_endermans",
 		"type": "count",
 		"icon":{
-			"type":"base64",
-			"id":"iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAIVBMVEUAAAADJiAGOTELTUIMNzAQXlEbe2slhHQszbE0mYiM9OJEKROfAAAAAXRSTlMAQObYZgAAAHJJREFUKFOl0UERwCAMBEAsYAELsXAWYgELsYCFWEBlr4/STiFtZ3q/2w8kSeljADwCYFavdAe4q2qtiACuvYnQEAJ7KaQAYMqe85AV7J1gEdQDPACK8NUibfxjBhWm9RASVMV8zLYArnCf/ewzvN/lZzbVIke5bTg3CwAAAABJRU5ErkJggg=="
+			"type":"skull3d",
+			"id":"40ffb37212f64678b3f22176bf56dd4b"
 		}
 	},
 	{

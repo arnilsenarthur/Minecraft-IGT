@@ -69,47 +69,52 @@ public class ScreenRecognition
         
         //Check nether sky
         int matches = 0;
-        for(int i = 0; i < points_to_check_sky; i ++)
+        if(!nether)
         {
-        	int x = sky_section.x + rn.nextInt(sky_section.width);
-        	int y = sky_section.y + rn.nextInt(sky_section.height);
-        	
-        	int c = image.getRGB(x, y);
-        	
-        	 int red =   (c & 0x00ff0000) >> 16;
-             int green = (c & 0x0000ff00) >> 8;
-             int blue =   c & 0x000000ff;
-        	
-        	if(red > 30 && red < 80 && green > 0 && green < 18 && blue > 0 && blue < 18)
-        		matches ++;
-        }
-        
-        if(matches > 40)
-        {
-        	nether = true;
+        	 for(int i = 0; i < points_to_check_sky; i ++)
+             {
+             	int x = sky_section.x + rn.nextInt(sky_section.width);
+             	int y = sky_section.y + rn.nextInt(sky_section.height);
+             	
+             	int c = image.getRGB(x, y);
+             	
+             	 int red =   (c & 0x00ff0000) >> 16;
+                  int green = (c & 0x0000ff00) >> 8;
+                  int blue =   c & 0x000000ff;
+             	
+             	if(red > 30 && red < 80 && green > 0 && green < 18 && blue > 0 && blue < 18)
+             		matches ++;
+             }
+             
+             if(matches > 40)
+             {
+             	nether = true;
+             }
         }
         
         //Check the end ground (end stones)
         matches = 0;
-        for(int i = 0; i < points_to_check_ground; i ++)
+        if(!the_end)
         {
-        	int x = ground_section.x + rn.nextInt(ground_section.width);
-        	int y = ground_section.y + rn.nextInt(ground_section.height);
-        	
-        	int c = image.getRGB(x, y);
-        	
-        	 int red =   (c & 0x00ff0000) >> 16;
-             int green = (c & 0x0000ff00) >> 8;
-             int blue =   c & 0x000000ff;
-        	
-        	if(red < 195 && green < 195 && blue < 195 && red > 85 && green > 85 && blue > 85 && green > blue && green > red)
-        		matches ++;
+	        for(int i = 0; i < points_to_check_ground; i ++)
+	        {
+	        	int x = ground_section.x + rn.nextInt(ground_section.width);
+	        	int y = ground_section.y + rn.nextInt(ground_section.height);
+	        	
+	        	int c = image.getRGB(x, y);
+	        	
+	        	 int red =   (c & 0x00ff0000) >> 16;
+	             int green = (c & 0x0000ff00) >> 8;
+	             int blue =   c & 0x000000ff;
+	        	
+	        	if(red < 195 && green < 195 && blue < 195 && red > 85 && green > 85 && blue > 85 && green > blue && green > red)
+	        		matches ++;
+	        }
+	        
+	        if(matches > 40)
+	        {
+	        	the_end = true;
+	        }
         }
-        
-        if(matches > 40)
-        {
-        	the_end = true;
-        }
-        
 	}
 }
