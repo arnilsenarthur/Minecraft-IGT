@@ -1,5 +1,5 @@
 # Árnilsen's Minecraft In-Game Timer
-Minecraft InGameTimer with layout customization and screen recognition to automatic update splits. 
+Minecraft InGameTimer with layout customization and screen recognition to automatic update splits. (For now only works 1.12+)
 <br>
 Created by Árnilsen Arthur/Infobros2000 with Java using java-json api, 
 ## Timer Image
@@ -10,7 +10,7 @@ https://github.com/arnilsenarthur/Minecraft-IGT/releases
 - [x] Layout Customization via JSON
 - [x] Stats/Advancements Customization via JSON
 - [x] Time Estimation between Minecraft Auto Saves
-- [x] Screen Recognition system to detect when you enter nether or the end without need an Auto Save
+- [x] Screen Recognition system to detect when you enter nether or the end without need an Auto Save and detects loading screens
 - [x] Retrieves your head texture and username automatically and show on screen (Configurable)
 - [ ] Layout Customization GUI
 - [ ] Stats/Advancements Customization GUI
