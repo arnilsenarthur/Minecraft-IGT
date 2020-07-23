@@ -34,6 +34,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import arnilsen.timer.Data.DataProvider;
 import arnilsen.timer.Data.Stat;
+import arnilsen.timer.gui.ScreenRecognitionConfidence;
 import arnilsen.timer.gui.SlapshScreen;
 import arnilsen.timer.gui.Window;
 import arnilsen.timer.screen.ScreenRecognition;
@@ -152,6 +153,11 @@ public class Main {
 
 		frame.progressBar_1.setValue(90);
 		
+		//ScreenRecognitionConfidence src = new ScreenRecognitionConfidence();
+		//src.setVisible(true);
+		
+		
+		
 		//Try to retrieve Steve head
 		try 
 		{
@@ -202,7 +208,7 @@ public class Main {
 		        			s.updateLabel(layout, data);
 		        		
 		        		//Screen recognition
-		        		ScreenRecognition.doRecognition(data, layout);
+		        		
 		        				        		
 		        	}
 		        	catch(Exception e)
@@ -221,9 +227,16 @@ public class Main {
 
 		    TimerTask task = new TimerTask()
 		    {
-		      
+		    	int i = 0;
 		        public void run()
 		        {
+		        	
+		        	i ++;
+		        	if(i >= 4)
+		        	{
+		        		ScreenRecognition.doRecognition(data, layout);
+		        		i = 0;
+		        	}
 		        	
 		        	//Update label color - For future GUILayoutManager
 		        	window.labelLastRealTimer.setForeground(layout.last_ingame_timer_color);
@@ -424,6 +437,7 @@ public class Main {
 				data.ingame_time = getValue(obj,"minecraft:custom","minecraft:play_one_minute") * 50;
 				if(data.last_stats_file_update != f.lastModified())
 				{
+					data.discount_time = 0;
 					
 					if(data.ender_dragon_killed)
 						data.ingame = false;

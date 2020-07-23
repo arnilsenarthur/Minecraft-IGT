@@ -110,7 +110,8 @@ public class Data
 	public String player_uuid;
 	public String player_nick;
 	public ImageIcon player_icon;
-	
+	public long discount_time = 0;
+	public long paused_time = 0;
 	
 	/**
 	 * Gets the estimate time (or the final time if the speedrun has ended)
@@ -121,7 +122,7 @@ public class Data
 		if(!ingame)
 			return ingame_time;
 		
-		return ingame_time == 0 ? 0 : (ingame_time + (System.currentTimeMillis() - last_stats_file_update));
+		return ingame_time == 0 ? 0 : (paused_time != 0 ? paused_time : (ingame_time + (System.currentTimeMillis() - last_stats_file_update) - discount_time));
 	}
 	
 	/**
